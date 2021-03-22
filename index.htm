@@ -11,66 +11,7 @@
 
 
 
-<style>
-.paragrafo1 {
-  color: black;
-  text-align: center;
-  font-family: Arial;
-  font-weight: bold;
-}
-.paragrafo2 {
-  color: black;
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-weight: bold;
-}
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 200;
-  line-height: 1;
-  font-size: 1rem;
-  color: orange;
-  padding: 2rem;
-  box-sizing: border-box;
-  background-color: lightgrey;
-}
-.title1 {
-  text-align: center;
-  color: orange;
-}
-
-h2{
-  color: orange;
-}
-h3{
-  color: orange;
-    text-decoration: none;
-}
-
-a {
-  color: orange;
-}
-ol {
-  margin-left: 1rem
-
-}
-
-.tabella1 {
-  width: 90%;
-  color: orange;
-
-
-}
-
-th, td {
-  text-align: left;
-  padding: 1px;
-
-}
-
-
-
-</style>
+  <link rel="stylesheet" href="styles.css">
 
 
 <title>EsBello</title>
@@ -135,9 +76,34 @@ th, td {
 
       <a class="btn btn-success" href="https://www.alitalia.com/it_it" role="button">Alitalia</a>
       <a class="btn btn-dark" href="https://www.ryanair.com/it/it" role="button">Ryanair</a>
+      <p></p>
+      <button class="btn btn-success" onclick="myFunction()">VINCI UN VIAGGIO GRATIS AI CARAIBI</button>
       </div>
 
-  
+      
+      <button class="btn btn-dark" onclick="changeBackground()">imposta sfondo nero</button>
+      <button class="btn btn-warning" onclick="changeBackground2()">imposta sfondo giallo</button>
+      <button class="btn btn-primary" onclick="changeBackground3()">imposta sfondo azzurro</button>
+      <button class="btn btn-info" onclick="changeBackground4()">imposta sfondo default</button>
+      <script>
+        function changeBackground() {
+          document.body.style.background = "black";
+        }
+        function changeBackground2() {
+          document.body.style.background = "yellow";
+        }
+        function changeBackground3() {
+          document.body.style.background = "lightblue";
+        }
+        function changeBackground4() {
+          document.body.style.background = "lightgrey";
+        }
+
+        
+        function myFunction() {
+          alert("EH! scherzone! ti sarebbe piaciuto! ricorda nessuno ti regalerà mai niente(risata malefica) ");
+        }
+      </script>
   
   </div>
 
